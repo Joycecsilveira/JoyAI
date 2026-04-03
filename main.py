@@ -10,7 +10,7 @@ def main (page: ft.Page):
 
     def send_message (e):
         ai_response.value = user_input.value
-        user_input.value = ""    # Adicionando o elemento na tela
+        user_input.value = ""
         page.update()
     
     send_button = ft.ElevatedButton("Send", on_click=send_message)
